@@ -1457,3 +1457,48 @@ video {
 .center .right .img1:hover + .play-button {
   opacity: 1;
 }
+
+.cart-icon {
+  font-size: 2.5rem;
+  padding: 0 1rem;
+  color: #555;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon.animate {
+  animation: cartAnimation 0.5s ease-in-out;
+}
+
+@keyframes cartAnimation {
+  0% {
+    transform: scale(1);
+    color: #555;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #007bff; /* blue color */
+  }
+  100% {
+    transform: scale(1);
+    color: #555;
+  }
+}
+
+@keyframes cartAnimation {
+  0% {
+    transform: scale(1);
+    color: #555;
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* blue box shadow */
+  }
+  100% {
+    transform: scale(1);
+    color: #555;
+    box-shadow: none;
+  }
+}
